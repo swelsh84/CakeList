@@ -11,6 +11,10 @@
 		202914C62343E5D1002AF129 /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202914C52343E5D1002AF129 /* Cake.swift */; };
 		202914C82343E8B5002AF129 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202914C72343E8B5002AF129 /* NetworkClient.swift */; };
 		202914CA23468655002AF129 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202914C923468655002AF129 /* MainViewController.swift */; };
+		202914CF23472B0E002AF129 /* CakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202914CE23472B0E002AF129 /* CakeTests.swift */; };
+		202914D023472B37002AF129 /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202914C52343E5D1002AF129 /* Cake.swift */; };
+		202914D223472C11002AF129 /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202914D123472C11002AF129 /* NetworkClientTests.swift */; };
+		202914D323472C28002AF129 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202914C72343E8B5002AF129 /* NetworkClient.swift */; };
 		DBF17A171B0B648F004E6311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A161B0B648F004E6311 /* main.m */; };
 		DBF17A1A1B0B648F004E6311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A191B0B648F004E6311 /* AppDelegate.m */; };
 		DBF17A1D1B0B648F004E6311 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A1C1B0B648F004E6311 /* MasterViewController.m */; };
@@ -37,6 +41,9 @@
 		202914C52343E5D1002AF129 /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
 		202914C72343E8B5002AF129 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		202914C923468655002AF129 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		202914CD23472B0D002AF129 /* Cake ListTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cake ListTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		202914CE23472B0E002AF129 /* CakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTests.swift; sourceTree = "<group>"; };
+		202914D123472C11002AF129 /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		DBF17A111B0B648F004E6311 /* Cake List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cake List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF17A151B0B648F004E6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF17A161B0B648F004E6311 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +95,14 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		202914D423473401002AF129 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				202914C32343E3C6002AF129 /* CakeDataSource.swift */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
 		DBF17A081B0B648F004E6311 = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +128,7 @@
 				DBF17A191B0B648F004E6311 /* AppDelegate.m */,
 				202914CC23472A01002AF129 /* Controllers */,
 				202914CB234729EE002AF129 /* Models */,
-				202914C32343E3C6002AF129 /* CakeDataSource.swift */,
+				202914D423473401002AF129 /* DataSources */,
 				DBF17A401B0B8EE3004E6311 /* View Controllers */,
 				DBF17A411B0B8EED004E6311 /* Cells */,
 				DBF17A211B0B648F004E6311 /* Main.storyboard */,
@@ -139,6 +154,9 @@
 			children = (
 				DBF17A331B0B648F004E6311 /* Cake_ListTests.m */,
 				DBF17A311B0B648F004E6311 /* Supporting Files */,
+				202914CE23472B0E002AF129 /* CakeTests.swift */,
+				202914D123472C11002AF129 /* NetworkClientTests.swift */,
+				202914CD23472B0D002AF129 /* Cake ListTests-Bridging-Header.h */,
 			);
 			path = "Cake ListTests";
 			sourceTree = "<group>";
@@ -223,6 +241,7 @@
 					};
 					DBF17A2C1B0B648F004E6311 = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 1100;
 						TestTargetID = DBF17A101B0B648F004E6311;
 					};
 				};
@@ -288,6 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF17A341B0B648F004E6311 /* Cake_ListTests.m in Sources */,
+				202914D323472C28002AF129 /* NetworkClient.swift in Sources */,
+				202914D023472B37002AF129 /* Cake.swift in Sources */,
+				202914CF23472B0E002AF129 /* CakeTests.swift in Sources */,
+				202914D223472C11002AF129 /* NetworkClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +456,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -444,6 +468,9 @@
 				INFOPLIST_FILE = "Cake ListTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cake ListTests/Cake ListTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cake List.app/Cake List";
 			};
 			name = Debug;
@@ -453,6 +480,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -460,6 +488,8 @@
 				INFOPLIST_FILE = "Cake ListTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cake ListTests/Cake ListTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cake List.app/Cake List";
 			};
 			name = Release;

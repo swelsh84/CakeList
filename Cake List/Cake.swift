@@ -8,6 +8,8 @@
 
 import UIKit
 
+//A simple object to hold our cake data. The class uses Codable so that the objects can be directly decoded from the JSON file.
+
 class Cake: Codable {
     
     var title: String
