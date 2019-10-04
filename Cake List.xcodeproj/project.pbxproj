@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		202914C42343E3C6002AF129 /* CakeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202914C32343E3C6002AF129 /* CakeDataSource.swift */; };
+		202914C62343E5D1002AF129 /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202914C52343E5D1002AF129 /* Cake.swift */; };
+		202914C82343E8B5002AF129 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202914C72343E8B5002AF129 /* NetworkClient.swift */; };
+		202914CA23468655002AF129 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202914C923468655002AF129 /* MainViewController.swift */; };
 		DBF17A171B0B648F004E6311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A161B0B648F004E6311 /* main.m */; };
 		DBF17A1A1B0B648F004E6311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A191B0B648F004E6311 /* AppDelegate.m */; };
 		DBF17A1D1B0B648F004E6311 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A1C1B0B648F004E6311 /* MasterViewController.m */; };
@@ -28,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		202914C02343DCF0002AF129 /* Cake List-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cake List-Bridging-Header.h"; sourceTree = "<group>"; };
+		202914C32343E3C6002AF129 /* CakeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDataSource.swift; sourceTree = "<group>"; };
+		202914C52343E5D1002AF129 /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
+		202914C72343E8B5002AF129 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		202914C923468655002AF129 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DBF17A111B0B648F004E6311 /* Cake List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cake List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF17A151B0B648F004E6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF17A161B0B648F004E6311 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		202914CB234729EE002AF129 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				202914C52343E5D1002AF129 /* Cake.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		202914CC23472A01002AF129 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				202914C72343E8B5002AF129 /* NetworkClient.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		DBF17A081B0B648F004E6311 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +111,9 @@
 			children = (
 				DBF17A181B0B648F004E6311 /* AppDelegate.h */,
 				DBF17A191B0B648F004E6311 /* AppDelegate.m */,
+				202914CC23472A01002AF129 /* Controllers */,
+				202914CB234729EE002AF129 /* Models */,
+				202914C32343E3C6002AF129 /* CakeDataSource.swift */,
 				DBF17A401B0B8EE3004E6311 /* View Controllers */,
 				DBF17A411B0B8EED004E6311 /* Cells */,
 				DBF17A211B0B648F004E6311 /* Main.storyboard */,
@@ -99,6 +127,7 @@
 		DBF17A141B0B648F004E6311 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				202914C02343DCF0002AF129 /* Cake List-Bridging-Header.h */,
 				DBF17A151B0B648F004E6311 /* Info.plist */,
 				DBF17A161B0B648F004E6311 /* main.m */,
 			);
@@ -125,6 +154,7 @@
 		DBF17A401B0B8EE3004E6311 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				202914C923468655002AF129 /* MainViewController.swift */,
 				DBF17A1B1B0B648F004E6311 /* MasterViewController.h */,
 				DBF17A1C1B0B648F004E6311 /* MasterViewController.m */,
 			);
@@ -189,6 +219,7 @@
 				TargetAttributes = {
 					DBF17A101B0B648F004E6311 = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 1100;
 					};
 					DBF17A2C1B0B648F004E6311 = {
 						CreatedOnToolsVersion = 6.3;
@@ -201,6 +232,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -240,10 +272,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202914C42343E3C6002AF129 /* CakeDataSource.swift in Sources */,
 				DBF17A1A1B0B648F004E6311 /* AppDelegate.m in Sources */,
 				DBF17A3F1B0B8E16004E6311 /* CakeCell.m in Sources */,
 				DBF17A1D1B0B648F004E6311 /* MasterViewController.m in Sources */,
 				DBF17A171B0B648F004E6311 /* main.m in Sources */,
+				202914C62343E5D1002AF129 /* Cake.swift in Sources */,
+				202914C82343E8B5002AF129 /* NetworkClient.swift in Sources */,
+				202914CA23468655002AF129 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,9 +405,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Cake List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cake List/Cake List-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -379,15 +419,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Cake List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cake List/Cake List-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		DBF17A3B1B0B648F004E6311 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -407,6 +451,7 @@
 		DBF17A3C1B0B648F004E6311 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

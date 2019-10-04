@@ -17,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self getData];
+//    [self getData];
+    
+//    UIButton *button = [UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 100)
+    
 }
 
 #pragma mark - Table View
@@ -51,20 +54,23 @@
 
 - (void)getData{
     
-    NSURL *url = [NSURL URLWithString:@"https://gist.githubusercontent.com/hart88/198f29ec5114a3ec3460/raw/8dd19a88f9b8d24c23d9960f3300d0c917a4f07c/cake.json"];
-    
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    
-    NSError *jsonError;
-    id responseData = [NSJSONSerialization
-                       JSONObjectWithData:data
-                       options:kNilOptions
-                       error:&jsonError];
-    if (!jsonError){
-        self.objects = responseData;
-        [self.tableView reloadData];
-    } else {
-    }
+//    NSURL *url = [NSURL URLWithString:@"https://gist.githubusercontent.com/hart88/198f29ec5114a3ec3460/raw/8dd19a88f9b8d24c23d9960f3300d0c917a4f07c/cake.json"];
+//
+//    NSData *data = [NSData dataWithContentsOfURL:url];
+//
+//    NSError *jsonError;
+//    id responseData = [NSJSONSerialization
+//                       JSONObjectWithData:data
+//                       options:kNilOptions
+//                       error:&jsonError];
+//    if (!jsonError){
+//        NSLog(@"Right here.");
+//        self.objects = responseData;
+//        NSLog(@"%d", [self.objects count]);
+//        [self.tableView reloadData];
+//    } else {
+//        NSLog(@"%@", jsonError);
+//    }
     
 }
 
